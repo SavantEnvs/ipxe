@@ -1,0 +1,2 @@
+ftp://ftp.example.com/pub/
+../../x

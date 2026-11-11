@@ -1,0 +1,9 @@
+project: savantenvs/ipxe
+target: fuzz_uri
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_uri/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_uri @@
+    afl: true
+    timeout: 10

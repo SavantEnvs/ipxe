@@ -1,0 +1,2 @@
+http://user:pass@example.com:8080/a/b/c?x=1&y=%20z#frag
+../d/e?q
