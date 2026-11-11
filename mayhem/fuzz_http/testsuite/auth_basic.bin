@@ -1,0 +1,4 @@
+HTTP/1.1 401 Unauthorized
+WWW-Authenticate: Basic realm="ipxe"
+Content-Length: 0
+
