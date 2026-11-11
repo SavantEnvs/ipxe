@@ -1,0 +1,9 @@
+project: savantenvs/ipxe
+target: fuzz_dhcp
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_dhcp/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_dhcp @@
+    afl: true
+    timeout: 10

@@ -1,0 +1,9 @@
+project: savantenvs/ipxe
+target: fuzz_netrx
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_netrx/testsuite
+cmds:
+  - cmd: /mayhem/mayhem/out/fuzz_netrx @@
+    afl: true
+    timeout: 10
